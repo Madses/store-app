@@ -67,7 +67,7 @@
 }
 
 .header__sign-up:hover {
-  background: #f6f6f6;
+  background: #f5f5f5;
 }
 
 .header__sign-up span {
@@ -93,7 +93,7 @@
 }
 .header__cart:hover {
   cursor: pointer;
-  background: #f6f6f6;
+  background: #f5f5f5;
   text-align: center;
   border-radius: 100%;
 }
@@ -127,7 +127,7 @@
   margin-left: 50px;
   height: 45px;
   border: none;
-  background: #f6f6f6;
+  background: #f5f5f5;
   padding-left: 40px;
   padding-right: 20px;
   font-weight: 400;
