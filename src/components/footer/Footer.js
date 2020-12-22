@@ -9,6 +9,8 @@ import {
   FiLinkedin,
 } from 'react-icons/fi';
 
+import { FaFacebook, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
+
 export default function Footer() {
   return (
     <div className="footer-container">
@@ -25,24 +27,12 @@ export default function Footer() {
         <h2>Subscribe and never miss a release</h2>
         <SubscriptionForm />
       </div>
-      <div className="footer-container__socials">
+      <div className="footer-container__social">
         <h2>Follow us</h2>
         <div className="footer-container__social-icons">
-          <div>
-            <p>
-              <FiFacebook />
-            </p>
-          </div>
-          <div>
-            <p>
-              <FiTwitter />
-            </p>
-          </div>
-          <div>
-            <p>
-              <FiLinkedin />
-            </p>
-          </div>
+          <FaFacebook className="footer-container__social-icon" />
+          <FaTwitterSquare className="footer-container__social-icon" />
+          <FaLinkedin className="footer-container__social-icon" />
         </div>
       </div>
     </div>

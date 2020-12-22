@@ -3,7 +3,7 @@ import './style.css';
 export default function ProductCard({ image, condition, name, size, price }) {
   return (
     <div className="product-card">
-      <img className="product-card__product-image" src={image} alt={name} />
+      <img src={image} alt={name} />
 
       <div className="product-card__content">
         <p className="product-card__product-state">{condition}</p>

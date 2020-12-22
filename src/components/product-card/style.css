@@ -2,7 +2,6 @@
   height: 350px;
   width: 10%;
   min-width: 250px;
-  margin-right: 20px;
   margin-bottom: 30px;
   border: 1px solid #f1f1f1;
 }
@@ -13,14 +12,14 @@
   transition: 0.5s;
 }
 
+.product-card img {
+  height: 200px;
+  width: 250px;
+}
+
 .product-card:hover .product-card__product-image {
   opacity: 0.5;
   transition: 0.5s;
-}
-
-.product-card__product-image {
-  height: 200px;
-  width: 250px;
 }
 
 .product-card__content {

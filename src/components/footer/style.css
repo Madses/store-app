@@ -20,45 +20,29 @@ h2 {
 .footer-container__contact {
   width: 200px;
   margin-top: 40px;
-  margin-right: 40px;
-}
-
-.footer-container__socials {
-  width: 200px;
-  margin-top: 40px;
-  margin-right: 20px;
-  margin-right: 40px;
 }
 
 .footer-container__subscription-form {
   width: 500px;
   margin-top: 40px;
   margin-right: 40px;
+  margin-left: 40px;
+}
+
+.footer-container__social {
+  width: 200px;
+  margin-top: 40px;
 }
 
 .footer-container__social-icons {
   display: flex;
+  justify-content: space-between;
 }
 
-.footer-container__social-icons div {
+.footer-container__social-icon {
   width: 45px;
   height: 45px;
-  font-size: 25px;
-  margin-right: 20px;
-  border: 2px solid white;
-  border-radius: 100%;
-}
-
-.footer-container__social-icons div:hover {
-  background: white;
-  color: black;
-  transition: 0.5s;
-}
-
-.footer-container__social-icons p {
-  margin: 0;
-  text-align: center;
-  padding-top: 10px;
+  cursor: pointer;
 }
 
 /*
