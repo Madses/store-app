@@ -13,6 +13,11 @@
   transition: 0.5s;
 }
 
+.product-card:hover .product-card__product-image {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
 .product-card__product-image {
   height: 200px;
   width: 250px;

@@ -1,0 +1,76 @@
+{
+  "shoes": [
+    {
+      "id": 1,
+      "name": "Jordan 1 Low SB UNC",
+      "sizeUs": 7,
+      "sizeEu": 40,
+      "condition": "Used",
+      "price": 410,
+      "img": "https://stockx-360.imgix.net/Air-Jordan-1-Low-SB-UNC/Images/Air-Jordan-1-Low-SB-UNC/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1606319019&w=400"
+    },
+    {
+      "id": 2,
+      "name": "adidas Yeezy Boost 350 V2 Zebra",
+      "sizeUs": 10,
+      "sizeEu": 44,
+      "condition": "New",
+      "price": 250,
+      "img": "https://stockx-360.imgix.net/adidas-Yeezy-Boost-350-V2-Zebra/Images/adidas-Yeezy-Boost-350-V2-Zebra/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1606321670&w=400"
+    },
+    {
+      "id": 3,
+      "name": "Nike SB Dunk Low Sean Cliver",
+      "sizeUs": 8,
+      "sizeEu": 41,
+      "condition": "New",
+      "price": 700,
+      "img": "https://stockx-360.imgix.net/Nike-SB-Dunk-Low-Sean-Cliver/Images/Nike-SB-Dunk-Low-Sean-Cliver/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1607122567&w=400"
+    },
+    {
+      "id": 4,
+      "name": "Nike SB Dunk Low Ben & Jerry's Chunky Dunky",
+      "sizeUs": 8.5,
+      "sizeEu": 42,
+      "condition": "Used",
+      "price": 900,
+      "img": "https://stockx-360.imgix.net/Nike-SB-Dunk-Low-Ben-Jerrys-Chunky-Dunky/Images/Nike-SB-Dunk-Low-Ben-Jerrys-Chunky-Dunky/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1607043246&w=400"
+    },
+    {
+      "id": 5,
+      "name": "Nike SB Dunk Low Travis Scott",
+      "sizeUs": 11,
+      "sizeEu": 45,
+      "condition": "New",
+      "price": 1200,
+      "img": "https://stockx-360.imgix.net/Nike-SB-Dunk-Low-Travis-Scott/Images/Nike-SB-Dunk-Low-Travis-Scott/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1606325738&w=400"
+    },
+    {
+      "id": 6,
+      "name": "Nike Air Force 1 Low Stussy Fossil",
+      "sizeUs": 10,
+      "sizeEu": 44,
+      "condition": "New",
+      "price": 400,
+      "img": "https://static.sneakerjagers.com/products/660x660/178400.jpg"
+    },
+    {
+      "id": 7,
+      "name": "adidas Yeezy Boost 350 V2 Black Red",
+      "sizeUs": 9.5,
+      "sizeEu": 43,
+      "condition": "New",
+      "price": 280,
+      "img": "https://stockx-360.imgix.net/adidas-Yeezy-Boost-350-V2-Core-Black-Red-2017/Images/adidas-Yeezy-Boost-350-V2-Core-Black-Red-2017/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1606320792&w=400"
+    },
+    {
+      "id": 8,
+      "name": "Jordan 1 Retro High Obsidian UNC",
+      "sizeUs": 10,
+      "sizeEu": 44,
+      "condition": "Used",
+      "price": 350,
+      "img": "https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-UNC-Leather/Images/Air-Jordan-1-Retro-High-UNC-Leather/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1606322077&w=400"
+    }
+  ]
+}

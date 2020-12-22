@@ -1,18 +1,15 @@
 import React from 'react';
 import './style.css';
-export default function ProductCard() {
+export default function ProductCard({ image, condition, name, size, price }) {
   return (
     <div className="product-card">
-      <img
-        className="product-card__product-image"
-        src="https://www.famousfootwear.com/productimages/shoes_ia32041.jpg?trim.threshold=105&width=630&height=480&paddingWidth=60"
-        alt=""
-      />
+      <img className="product-card__product-image" src={image} alt={name} />
+
       <div className="product-card__content">
-        <p className="product-card__product-state">New</p>
-        <p className="product-card__product-name">OZWEEGO CELOX SHOES</p>
-        <p className="product-card__product-size">Available sizes (us): 10</p>
-        <p className="product-card__product-price">$400</p>
+        <p className="product-card__product-state">{condition}</p>
+        <p className="product-card__product-name">{name}</p>
+        <p className="product-card__product-size">Size: {size}</p>
+        <p className="product-card__product-price">${price}</p>
       </div>
     </div>
   );

@@ -15,7 +15,12 @@ input,
 select,
 textarea {
   font-size: 100%;
-  margin: 0; 
-  vertical-align: baseline; 
-  *vertical-align: middle; 
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
 }
