@@ -13,8 +13,9 @@
 }
 
 .product-card img {
-  height: 200px;
   width: 250px;
+  height: 200px;
+  object-fit: contain;
 }
 
 .product-card:hover .product-card__product-image {

@@ -11,7 +11,6 @@ h2 {
   height: auto;
   background: black;
   color: white;
-  bottom: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -54,13 +53,9 @@ h2 {
 
 .subscription-form__input-field {
   height: 45px;
-  width: 500px;
+  width: 100%;
   padding-left: 10px;
   border: 0;
-}
-
-.subscription-form__input-field::placeholder {
-  color: black;
 }
 
 .subscription-form__input-field:focus {
@@ -74,16 +69,13 @@ h2 {
   border: 2px solid white;
   color: white;
   background: black;
+  cursor: pointer;
 }
 
 .subscription-form__subscribe-button:hover {
   background: white;
   color: black;
   transition: 0.5s;
-}
-
-input[type='submit'] {
-  height: 45px;
 }
 
 .subscription-form__icon {

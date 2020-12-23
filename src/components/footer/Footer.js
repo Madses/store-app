@@ -1,14 +1,7 @@
 import React from 'react';
 import SubscriptionForm from './SubscriptionForm';
 import './style.css';
-import {
-  FiPhone,
-  FiMail,
-  FiFacebook,
-  FiTwitter,
-  FiLinkedin,
-} from 'react-icons/fi';
-
+import { FiPhone, FiMail } from 'react-icons/fi';
 import { FaFacebook, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {

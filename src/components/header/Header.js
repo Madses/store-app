@@ -30,7 +30,7 @@ export default function Header() {
           <FiUser className="header__icon" />
           <FiShoppingCart className="header__icon" />
           <div className="header__right-counter">
-            <span>10</span>
+            <span>0</span>
           </div>
         </div>
       </div>
