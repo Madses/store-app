@@ -1,6 +1,6 @@
 .product-card {
   height: 350px;
-  width: 10%;
+  width: 310px;
   min-width: 250px;
   margin-bottom: 30px;
   border: 1px solid #f1f1f1;
@@ -13,8 +13,8 @@
 }
 
 .product-card img {
-  width: 250px;
   height: 200px;
+  width: 100%;
   object-fit: contain;
 }
 

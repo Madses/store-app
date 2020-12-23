@@ -49,8 +49,9 @@
 .header__right {
   width: 120px;
   height: 60px;
+  line-height: 60px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .header__right-counter {
@@ -63,7 +64,7 @@
   font-size: 10px;
   color: white;
   position: absolute;
-  margin-left: 90px;
+  margin-left: 120px;
   background: #f55959;
 }
 

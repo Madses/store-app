@@ -52,7 +52,7 @@
       "sizeEu": 44,
       "condition": "New",
       "price": 400,
-      "img": "https://static.sneakerjagers.com/products/660x660/178400.jpg"
+      "img": "https://stockx.imgix.net/images/Nike-Air-Force-1-Low-Stussy-Fossil.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&trim=color&updated_at=1606944605&w=1000"
     },
     {
       "id": 7,
@@ -70,6 +70,15 @@
       "sizeEu": 44,
       "condition": "Used",
       "price": 350,
+      "img": "https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-UNC-Leather/Images/Air-Jordan-1-Retro-High-UNC-Leather/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1606322077&w=400"
+    },
+    {
+      "id": 9,
+      "name": "Jordan 1 Retro High Obsidian UNC",
+      "sizeUs": 7.5,
+      "sizeEu": 44,
+      "condition": "New",
+      "price": 450,
       "img": "https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-UNC-Leather/Images/Air-Jordan-1-Retro-High-UNC-Leather/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1606322077&w=400"
     }
   ]
