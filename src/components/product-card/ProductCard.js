@@ -22,7 +22,7 @@ export default function ProductCard({ product }) {
 
       {inCart(product) ? (
         <button
-          className="product-card__add-to-cart-btn"
+          className="product-card__remove-from-cart-btn"
           onClick={() => {
             removeFromCart(product);
           }}
