@@ -18,18 +18,10 @@ export default function Home() {
       });
   }, []);
 
-  console.log(products);
   return (
     <div className="product-container">
       {products.map((product) => (
-        <ProductCard
-          key={product.id}
-          image={product.img}
-          condition={product.condition}
-          name={product.name}
-          size={product.sizeUs}
-          price={product.price}
-        />
+        <ProductCard key={product.id} product={product} />
       ))}
     </div>
   );

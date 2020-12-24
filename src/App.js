@@ -1,15 +1,18 @@
 import './App.css';
 import Home from './pages/Home';
+import { CartProvider } from './contexts';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Home />
-      <Footer />
-    </div>
+    <>
+      <CartProvider>
+        <Header />
+        <Home />
+        <Footer />
+      </CartProvider>
+    </>
   );
 }
 
