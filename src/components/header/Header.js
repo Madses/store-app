@@ -2,12 +2,11 @@ import React from 'react';
 import './style.css';
 import SearchBar from './SearchBar';
 import logo from '../../assets/logo.png';
-import { FiUser, FiShoppingCart, FiCheckCircle } from 'react-icons/fi';
-import { useCart } from '../../hooks';
+import { FiUser, FiCheckCircle } from 'react-icons/fi';
+
+import Cart from './Cart';
 
 export default function Header() {
-  const { cartCount } = useCart();
-
   return (
     <>
       <div className="top-header">
@@ -31,10 +30,7 @@ export default function Header() {
         </div>
         <div className="header__right">
           <FiUser className="header__icon" />
-          <FiShoppingCart className="header__icon" />
-          <div className="header__right-counter">
-            <span>{cartCount}</span>
-          </div>
+          <Cart />
         </div>
       </div>
     </>

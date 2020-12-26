@@ -63,7 +63,6 @@
   transition: 0.2s;
 }
 
-
 .product-card__remove-from-cart-btn {
   border: 0;
   height: 35px;
@@ -72,5 +71,5 @@
   width: 150px;
   border: 2px solid black;
   background: black;
- color:white;
+  color: white;
 }

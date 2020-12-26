@@ -3,6 +3,7 @@ import { CartContext } from '../contexts';
 
 export default function useCart() {
   const { cart, setCart } = useContext(CartContext);
+
   const cartCount = cart.length;
 
   const addToCart = (cartItem) => {
@@ -16,6 +17,7 @@ export default function useCart() {
     if (!cartItem) return;
     const cartCopy = [...cart];
     const toRemoveIndex = cartCopy.indexOf(cartItem);
+    if (toRemoveIndex === -1) return;
     cartCopy.splice(toRemoveIndex, 1);
     setCart(cartCopy);
   };
