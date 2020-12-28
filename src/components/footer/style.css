@@ -23,7 +23,7 @@ h2 {
 }
 
 .footer-container__subscription-form {
-  width: 500px;
+  width: 30%;
   margin-top: 40px;
   margin-right: 40px;
   margin-left: 40px;
@@ -45,11 +45,37 @@ h2 {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1024px) {
+  .footer-container {
+    width: 100%;
+    min-height: 260px;
+    height: auto;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    position: absolute;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  .footer-container__contact,
+  .footer-container__social,
+  .footer-container__subscription-form {
+    margin: 0 auto;
+  }
+  .footer-container__subscription-form {
+    width: 300px;
+  }
+}
 /*
     subscription form
 */
 .subscription-form {
   display: flex;
+  text-align: center;
 }
 
 .subscription-form__input-field {

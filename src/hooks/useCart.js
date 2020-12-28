@@ -15,11 +15,8 @@ export default function useCart() {
 
   const removeFromCart = (cartItem) => {
     if (!cartItem) return;
-    const cartCopy = [...cart];
-    const toRemoveIndex = cartCopy.indexOf(cartItem);
-    if (toRemoveIndex === -1) return;
-    cartCopy.splice(toRemoveIndex, 1);
-    setCart(cartCopy);
+    const filteredCart = cart.filter((item) => item.id !== cartItem.id);
+    setCart(filteredCart);
   };
 
   return { cartCount, cart, addToCart, removeFromCart };

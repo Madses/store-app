@@ -1,32 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import { useProducts } from '../../hooks';
-import axios from 'axios';
 
 export default function SearchBar() {
-  const { setProducts } = useProducts();
   const [query, setQuery] = useState('');
+  const [debounced, setDebounced] = useState('');
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setDebounced(query);
+    }, 300);
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [query]);
 
   const handleChange = (e) => {
     e.preventDefault();
     setQuery(e.target.value);
   };
 
-  useEffect(() => {
-    const timeoutId = setTimeout(
-      () =>
-        axios
-          .get(`/shoes?q=${query}`)
-          .then((res) => {
-            setProducts(res.data);
-          })
-          .catch((err) => {
-            console.error(err);
-          }),
-      500
-    );
-    return () => clearTimeout(timeoutId);
-  }, [query]);
+  useProducts(debounced);
 
   return (
     <div className="search-form">

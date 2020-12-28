@@ -5,11 +5,7 @@ import ProductCard from './ProductCard';
 import './style.css';
 
 export default function Home() {
-  const { products, isLoading } = useProducts();
-
-  /**
-   * @TODO show loading state
-   */
+  const { products } = useProducts();
 
   return (
     <div className="product-container">
