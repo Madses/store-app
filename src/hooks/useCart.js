@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { CartContext } from '../contexts';
 
 export default function useCart() {
-  const { cart, setCart } = useContext(CartContext);
+  const [cart, setCart] = useContext(CartContext);
 
   const cartCount = cart.length;
 

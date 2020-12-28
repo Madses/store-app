@@ -1,7 +1,22 @@
+.product-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 60%;
+  height: auto;
+  min-height: 510px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/*
+  product card component
+*/
 .product-card {
   height: 370px auto;
-  width: 310px;
-  min-width: 250px;
+  width: 28%;
+  min-width: 280px;
   margin-bottom: 30px;
   border: 1px solid #f1f1f1;
 }
@@ -51,7 +66,7 @@
   height: 35px;
   margin-left: 15px;
   margin-bottom: 20px;
-  width: 150px;
+  width: 60%;
   border: 2px solid black;
   background: white;
   color: black;
@@ -68,7 +83,7 @@
   height: 35px;
   margin-left: 15px;
   margin-bottom: 20px;
-  width: 150px;
+  width: 60%;
   border: 2px solid black;
   background: black;
   color: white;

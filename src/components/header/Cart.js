@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { FiShoppingCart, FiX } from 'react-icons/fi';
-import { useCart } from '../../hooks';
+import { useCart, useOnClickOutside } from '../../hooks';
 
 export default function Cart() {
   const [isOpen, setIsOpen] = useState(false);
   const { cartCount, cart, removeFromCart } = useCart();
 
-  const subTotal = cart.reduce((acc, curr) => {
-    return acc + curr.price;
-  }, 0);
+  const subTotal = cart.reduce((acc, curr) => acc + curr.price, 0);
+  const cartRef = useRef();
+
+  useOnClickOutside(cartRef, () => setIsOpen(false));
 
   return (
     <div className="cart">
@@ -23,7 +24,7 @@ export default function Cart() {
       </div>
 
       {isOpen ? (
-        <div className="cart__content">
+        <div className="cart__content" ref={cartRef}>
           {!cart.length ? (
             <h2>Cart is empty...</h2>
           ) : (
@@ -45,8 +46,8 @@ export default function Cart() {
               ))}
 
               <div className="cart__content-summary">
-                <span className="cart__content-summary-name">SUB TOTAL</span>
-                <span className="cart__content-summary-price">${subTotal}</span>
+                <span>SUB TOTAL</span>
+                <span>${subTotal}</span>
               </div>
               <div className="cart__content-checkout-button">
                 PROCEED TO CHECKOUT

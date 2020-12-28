@@ -1,17 +1,19 @@
 import './App.css';
-import Home from './pages/Home';
-import { CartProvider } from './contexts';
+import { Home } from './pages/home';
+import { CartProvider, ProductProvider } from './contexts';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 
 function App() {
   return (
     <>
-      <CartProvider>
-        <Header />
-        <Home />
-        <Footer />
-      </CartProvider>
+      <ProductProvider>
+        <CartProvider>
+          <Header />
+          <Home />
+        </CartProvider>
+      </ProductProvider>
+      <Footer />
     </>
   );
 }

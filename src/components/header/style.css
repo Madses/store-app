@@ -153,12 +153,11 @@
 }
 
 .cart__content-item-name {
-  white-space: nowrap;
   width: 115px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0 10px 0 10px;
   line-height: 70px;
 }
 
@@ -189,11 +188,14 @@
   display: flex;
   justify-content: space-between;
   margin: 0 20px 0 20px;
-  font-size: 12px;
+}
+
+.cart__content-summary span {
+  font-weight: bold;
 }
 
 .cart__content-checkout-button {
-  width: 240px;
+  width: 255px;
   height: 30px;
   border: 2px solid black;
   color: black;
