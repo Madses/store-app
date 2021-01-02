@@ -1,0 +1,110 @@
+/*
+    Footer
+*/
+
+.footer-container {
+  width: 100%;
+  min-height: 260px;
+  height: auto;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+
+  h2 {
+    font-size: 18px;
+  }
+
+  &__contact {
+    width: 200px;
+    margin-top: 40px;
+  }
+
+  &__subscription-form {
+    width: 30%;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  &__social {
+    width: 200px;
+    margin-top: 40px;
+
+    &-icon {
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+    }
+
+    &-icons {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+    &__contact,
+    &__social,
+    &__subscription-form {
+      margin: 0 auto;
+      width: 300px;
+    }
+  }
+}
+/*
+    subscription form
+*/
+.subscription-form {
+  display: flex;
+  text-align: center;
+
+  &__input-field {
+    height: 45px;
+    width: 100%;
+    padding-left: 10px;
+    border: 0;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  &__subscribe-button {
+    width: 55px;
+    border: 0;
+    border: 2px solid white;
+    color: white;
+    background: black;
+    cursor: pointer;
+
+    &:hover {
+      background: white;
+      color: black;
+      transition: 0.5s;
+    }
+  }
+
+  &__icon {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .subscription-form {
+    &__input-field {
+      font-size: 18px;
+    }
+  }
+}

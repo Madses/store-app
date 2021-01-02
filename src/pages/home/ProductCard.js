@@ -1,9 +1,9 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 import { useCart } from '../../hooks';
 
-export default function ProductCard({ product }) {
-  const { img, name, condition, sizeUs, price } = product;
+export default function ProductCard({ product, sizeChart }) {
+  const { img, name, condition, sizeUs, price, sizeEu } = product;
   const { addToCart, cart, removeFromCart } = useCart();
 
   const inCart = (product) => {
@@ -16,7 +16,9 @@ export default function ProductCard({ product }) {
       <div className="product-card__content">
         <p className="product-card__product-state">{condition}</p>
         <p className="product-card__product-name">{name}</p>
-        <p className="product-card__product-size">Size: {sizeUs}</p>
+        <p className="product-card__product-size">
+          Size: {sizeChart === 'us' ? `${sizeUs} US` : `${sizeEu} EU`}
+        </p>
         <p className="product-card__product-price">${price}</p>
       </div>
 

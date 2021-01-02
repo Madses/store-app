@@ -1,25 +1,32 @@
 import React, { useState, useRef } from 'react';
-import { FiShoppingCart, FiX } from 'react-icons/fi';
+import { FiX } from 'react-icons/fi';
+import { BsBag } from 'react-icons/bs';
+
 import { useCart, useOnClickOutside } from '../../hooks';
 
 export default function Cart() {
+  const cartRef = useRef();
   const [isOpen, setIsOpen] = useState(false);
   const { cartCount, cart, removeFromCart } = useCart();
 
   const subTotal = cart.reduce((acc, curr) => acc + curr.price, 0);
-  const cartRef = useRef();
 
   useOnClickOutside(cartRef, () => setIsOpen(false));
 
   return (
     <div className="cart">
-      <FiShoppingCart
+      <BsBag
         className="cart__icon"
         onClick={() => {
           setIsOpen(!isOpen);
         }}
       />
-      <div className="cart__count">
+      <div
+        className="cart__count"
+        onClick={() => {
+          setIsOpen(!isOpen);
+        }}
+      >
         <span>{cartCount}</span>
       </div>
 

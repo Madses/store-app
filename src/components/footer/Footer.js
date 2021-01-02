@@ -1,6 +1,6 @@
 import React from 'react';
 import SubscriptionForm from './SubscriptionForm';
-import './style.css';
+import './style.scss';
 import { FiPhone, FiMail } from 'react-icons/fi';
 import { FaFacebook, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
 

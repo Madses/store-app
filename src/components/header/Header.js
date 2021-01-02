@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 import SearchBar from './SearchBar';
 import logo from '../../assets/logo.png';
 import { FiUser, FiCheckCircle } from 'react-icons/fi';
