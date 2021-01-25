@@ -19,7 +19,8 @@ export default function SubscriptionForm() {
     <>
       <form className="subscription-form" onSubmit={handleSubmit}>
         <input
-          type="text"
+          type="email"
+          required="true"
           className="subscription-form__input-field"
           placeholder="Je e-mailadres"
         />
