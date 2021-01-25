@@ -23,13 +23,15 @@ export default function SearchBar() {
   useProducts(debounced);
 
   return (
-    <div className="search-form">
+    <div className="search-form" data-testid="search-bar">
       <FiSearch className="search-form__icon" />
       <input
         type="text"
         className="search-form__input"
         placeholder="Search for brands or shoes..."
         onChange={handleChange}
+        data-testid="searchbar-input"
+        value={query}
       />
     </div>
   );

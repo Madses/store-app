@@ -67,12 +67,15 @@
 .subscription-form {
   display: flex;
   text-align: center;
+  outline: 0;
 
   &__input-field {
     height: 45px;
     width: 100%;
     padding-left: 10px;
     border: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
 
     &:focus {
       outline: none;
@@ -83,6 +86,7 @@
   &__subscribe-button {
     width: 55px;
     border: 0;
+    outline: 0;
     border: 2px solid white;
     color: white;
     background: black;

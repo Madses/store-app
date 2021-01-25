@@ -4,8 +4,6 @@ import { CartContext } from '../contexts';
 export default function useCart() {
   const [cart, setCart] = useContext(CartContext);
 
-  const cartCount = cart.length;
-
   const addToCart = (cartItem) => {
     if (!cartItem) return;
     setCart((prev) => {
@@ -19,5 +17,5 @@ export default function useCart() {
     setCart(filteredCart);
   };
 
-  return { cartCount, cart, addToCart, removeFromCart };
+  return { cart, addToCart, removeFromCart };
 }

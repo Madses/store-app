@@ -8,7 +8,7 @@ import Cart from './Cart';
 
 export default function Header() {
   return (
-    <>
+    <div data-testid="header-test">
       <div className="top-header">
         <span>
           <FiCheckCircle /> Free shipping
@@ -33,6 +33,6 @@ export default function Header() {
           <Cart />
         </div>
       </div>
-    </>
+    </div>
   );
 }

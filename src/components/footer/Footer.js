@@ -10,10 +10,10 @@ export default function Footer() {
       <div className="footer-container__contact">
         <h2>Contact us</h2>
         <p>
-          <FiMail /> k.l.m.aartsen@hotmail.com
+          <FiMail /> test@test.com
         </p>
         <p>
-          <FiPhone /> +31 6 - 4002 7862
+          <FiPhone /> +31 6 - 1222 - 123
         </p>
       </div>
       <div className="footer-container__subscription-form">

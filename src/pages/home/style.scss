@@ -102,6 +102,7 @@
     margin-left: 15px;
     margin-bottom: 20px;
     width: 60%;
+    outline: 0;
     border: 2px solid black;
     background: white;
     color: black;
@@ -122,5 +123,6 @@
     background: black;
     color: white;
     cursor: pointer;
+    outline: 0;
   }
 }
