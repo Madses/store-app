@@ -40,7 +40,7 @@ describe('<SearchBar/>', () => {
 
     await waitFor(
       () => expect(useProducts).toHaveBeenCalledWith('Air Jordan'),
-      { timeout: 360 }
+      { timeout: 380 }
     );
     jest.clearAllMocks();
   });

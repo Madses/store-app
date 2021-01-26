@@ -14,19 +14,25 @@ export default function Cart() {
   useOnClickOutside(cartRef, () => setIsOpen(false));
 
   return (
-    <div className="cart" data-testid="">
+    <div className="cart" data-testid="cart-test">
       <BsBagFill
         className="cart__icon"
         onClick={() => {
           setIsOpen(!isOpen);
         }}
       />
-      <div className="cart__count">
+      <div
+        data-testid="cart-count"
+        className="cart__count"
+        onClick={() => {
+          setIsOpen(!isOpen);
+        }}
+      >
         <span>{cartCount}</span>
       </div>
 
       {isOpen ? (
-        <div className="cart__content" ref={cartRef}>
+        <div className="cart__content" data-testid="cart-content" ref={cartRef}>
           {!cart.length ? (
             <h2>Cart is empty...</h2>
           ) : (
